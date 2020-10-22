@@ -34,3 +34,16 @@ body {
     position: relative;
     color: #fff;
 }
+.container {
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.page-section {
+    min-height: 100vh;
+    background-image: url(../images/page-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+}
