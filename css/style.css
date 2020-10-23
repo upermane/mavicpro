@@ -36,6 +36,10 @@ body {
   overflow-x: hidden;
   position: relative;
   color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-style: 17px;
+  line-height: 26px;
 }
 
 .container {
@@ -101,5 +105,14 @@ body {
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+}
+
+.title {
+  font-family: 'SFProDisplay-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 53px;
+  padding-left: 25px;
+  margin-bottom: 55px;
 }
 /*# sourceMappingURL=style.css.map */
