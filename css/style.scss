@@ -315,46 +315,52 @@ body {
             margin-left: 40px;
             transform: translateY(25px);
         }
-    }
-    &__item-1,
-    &__item-3,
-    &__item-4 {
-        position: relative;
-        &::after,
-        &::before {
-            content: '';
-            position: absolute;
-            background-repeat: no-repeat;
-            background-position: 0 0;
+        &:nth-child(3) {
+            margin-left: 25px;
+        }
+        &:nth-child(4) {
+            margin-left: 45px;
+        }
+        &:first-child,
+        &:nth-child(3){
+            position: relative;
+            &::after,
+            &::before {
+                content: '';
+                position: absolute;
+                background-repeat: no-repeat;
+                background-position: 0 0;
+            }
+        }
+        &:first-child {
+            
+            &::before {
+                height: 48px;
+                width: 245px;
+                background-image: url('../images/line1-2.svg');
+                right: -56px;
+                top: 31px;
+            }
+        }
+        &:nth-child(3) {
+            position: relative;
+            &::before {
+                height: 62px;
+                width: 463px;
+                background-image: url('../images/line2-3.svg');
+                right: -74px;
+                top: -68px;
+            }
+            &::after {
+                width: 241px;
+                height: 44px;
+                background-image: url('../images/line3-4.svg');
+                right: -58px;
+                top: 39px;
+            }
         }
     }
-    &__item-1 {
-        
-        &::before {
-            height: 48px;
-            width: 245px;
-            background-image: url('../images/line1-2.svg');
-            right: -56px;
-            top: 31px;
-        }
-    }
-    &__item-3 {
-        position: relative;
-        &::before {
-            height: 62px;
-            width: 463px;
-            background-image: url('../images/line2-3.svg');
-            right: -74px;
-            top: -68px;
-        }
-        &::after {
-            width: 241px;
-            height: 44px;
-            background-image: url('../images/line3-4.svg');
-            right: -58px;
-            top: 39px;
-        }
-    }
+
     &__num {
         font-family: 'Ubuntu', sans-serif;
         font-weight: 700;
