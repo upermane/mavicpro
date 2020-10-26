@@ -569,6 +569,7 @@ body {
   color: rgba(255, 255, 255, 0.8);
   padding: 20px 10px 20px 40px;
   position: relative;
+  margin-bottom: 4px;
   cursor: pointer;
 }
 
@@ -597,7 +598,7 @@ body {
   font-size: 15px;
   line-height: 150%;
   padding: 0 5px 75px 50px;
-  margin: 0;
+  margin: 0 0 4px 0;
   display: none;
 }
 
@@ -608,5 +609,170 @@ body {
 
 .questions__item.questions__item--active .questions__item-text {
   display: block;
+}
+
+.contacts__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 25px;
+}
+
+.contacts__info {
+  width: 240px;
+  margin-right: 60px;
+}
+
+.contacts__info-box {
+  margin-bottom: 30px;
+}
+
+.contacts__info-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+  margin: 0 0 13px;
+}
+
+.contacts__info-phone, .contacts__info-email {
+  font-size: 15px;
+  line-height: 18px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.contacts__info-email:hover {
+  text-decoration: underline;
+}
+
+.contacts__form {
+  width: 570px;
+  margin-right: 106px;
+}
+
+.contacts__form-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+  margin: 0 0 13px;
+}
+
+.contacts__form-text {
+  font-size: 15px;
+  line-height: 18px;
+  margin: 0 0 12px;
+}
+
+.contacts__form-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.contacts__form-input, .contacts__form-textarea {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 130%;
+  padding: 15px;
+  color: white;
+}
+
+.contacts__form-input::-webkit-input-placeholder, .contacts__form-textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contacts__form-input:-ms-input-placeholder, .contacts__form-textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contacts__form-input::-ms-input-placeholder, .contacts__form-textarea::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contacts__form-input::placeholder, .contacts__form-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.contacts__form-input {
+  width: 49%;
+}
+
+.contacts__form-textarea {
+  width: 100%;
+  min-height: 144px;
+  resize: none;
+}
+
+.contacts__form-btn {
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  padding: 9px 15px;
+  color: #FFFFFF;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.contacts__form-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.contacts__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts__social-item {
+  padding: 14px 0;
+}
+
+.contacts__social-link {
+  opacity: 0.5;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.contacts__social-link:hover {
+  opacity: 1;
+}
+
+.footer {
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  right: 0;
+}
+
+.footer__copy {
+  text-align: right;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 130%;
+  color: rgba(255, 255, 255, 0.64);
 }
 /*# sourceMappingURL=style.css.map */
