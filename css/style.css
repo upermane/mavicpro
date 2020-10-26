@@ -130,6 +130,7 @@ body {
   line-height: 53px;
   padding-left: 25px;
   margin-bottom: 55px;
+  padding-top: 200px;
 }
 
 .header {
@@ -151,7 +152,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 30px;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 17px;
@@ -257,5 +258,87 @@ body {
 
 .top__social-link:hover {
   opacity: 1;
+}
+
+.products__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 50px;
+}
+
+.products__text {
+  max-width: 440px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 150%;
+}
+
+.products__text p {
+  margin-bottom: 30px;
+}
+
+.products__slider-box {
+  position: relative;
+  padding-top: 110px;
+}
+
+.products__slider-text {
+  max-width: 281px;
+  position: absolute;
+  text-align: right;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  bottom: 30px;
+  left: -250px;
+  z-index: 5;
+}
+
+.products__slider {
+  max-width: 560px;
+}
+
+.products__slider::before {
+  content: '';
+  position: absolute;
+  width: 560px;
+  height: 276px;
+  border: 4px solid white;
+  top: -15px;
+  right: -17px;
+}
+
+.slider-btn {
+  padding: 16px 26px;
+  border: none;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  z-index: 5;
+  bottom: -45px;
+  outline: transparent;
+}
+
+.slider-btn svg {
+  stroke: black;
+}
+
+.slider-btn__left {
+  right: 62px;
+}
+
+.slider-btn.slick-disabled {
+  background-color: black;
+}
+
+.slider-btn.slick-disabled svg {
+  stroke: white;
 }
 /*# sourceMappingURL=style.css.map */
