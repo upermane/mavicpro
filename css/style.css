@@ -341,4 +341,112 @@ body {
 .slider-btn.slick-disabled svg {
   stroke: white;
 }
+
+.benefits__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 25px;
+}
+
+.benefits__item {
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.benefits__item:nth-child(even) {
+  margin-left: 40px;
+  -webkit-transform: translateY(25px);
+          transform: translateY(25px);
+}
+
+.benefits__item-1, .benefits__item-3, .benefits__item-4 {
+  position: relative;
+}
+
+.benefits__item-1::after, .benefits__item-1::before, .benefits__item-3::after, .benefits__item-3::before, .benefits__item-4::after, .benefits__item-4::before {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.benefits__item-1::before {
+  height: 48px;
+  width: 245px;
+  background-image: url("../images/line1-2.svg");
+  right: -56px;
+  top: 31px;
+}
+
+.benefits__item-3 {
+  position: relative;
+}
+
+.benefits__item-3::before {
+  height: 62px;
+  width: 463px;
+  background-image: url("../images/line2-3.svg");
+  right: -74px;
+  top: -68px;
+}
+
+.benefits__item-3::after {
+  width: 241px;
+  height: 44px;
+  background-image: url("../images/line3-4.svg");
+  right: -58px;
+  top: 39px;
+}
+
+.benefits__num {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 41px;
+  margin-right: 10px;
+}
+
+.benefits__img {
+  position: relative;
+  margin-right: 32px;
+}
+
+.benefits__img::before {
+  content: '';
+  position: absolute;
+  width: 193px;
+  height: 128px;
+  border: 2px solid white;
+  right: -12px;
+  top: -12px;
+  z-index: -1;
+}
+
+.benefits__info {
+  width: 300px;
+}
+
+.benefits__info-title {
+  width: 123px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.benefits__info-text {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 130%;
+}
 /*# sourceMappingURL=style.css.map */
